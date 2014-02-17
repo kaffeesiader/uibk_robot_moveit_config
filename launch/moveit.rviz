@@ -6,7 +6,7 @@ Panels:
       Expanded:
         - /MotionPlanning1
       Splitter Ratio: 0.74256
-    Tree Height: 119
+    Tree Height: 131
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -161,26 +161,6 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          leg_0_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          leg_1_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          leg_2_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          leg_3_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           right_arm_1_link:
             Alpha: 1
             Show Axes: false
@@ -284,11 +264,6 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          table_plate_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           torso_link:
             Alpha: 1
             Show Axes: false
@@ -453,26 +428,6 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          leg_0_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          leg_1_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          leg_2_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          leg_3_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           right_arm_1_link:
             Alpha: 1
             Show Axes: false
@@ -576,11 +531,6 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          table_plate_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           torso_link:
             Alpha: 1
             Show Axes: false
@@ -608,17 +558,17 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 2.52464
+      Distance: 2.87432
       Focal Point:
-        X: 0.523686
-        Y: 0.491093
-        Z: 4.61937e-07
+        X: 0.767141
+        Y: -0.174938
+        Z: 9.13513e-07
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.524797
+      Pitch: 0.324797
       Target Frame: /world_link
       Value: XYOrbit (rviz)
-      Yaw: 5.85995
+      Yaw: 5.65995
     Saved: ~
 Window Geometry:
   Displays:
@@ -630,9 +580,9 @@ Window Geometry:
   Hide Right Dock: false
   Motion Planning:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002a2000002a2fc0200000005fb000000100044006900730070006c00610079007301000000280000010c000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e0067010000013a000001900000017400ffffff0000026d000002a200000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002a2000002a2fc0200000005fb000000100044006900730070006c006100790073010000002800000118000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000146000001840000017400ffffff0000026d000002a200000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
   Width: 1301
-  X: 65
-  Y: 24
+  X: 57
+  Y: -4
