@@ -40,7 +40,7 @@
 	    pkg="controller_manager" 
 	    type="spawner"
 	    output="screen"
-	    args="right_arm left_arm right_sdh left_sdh joint_state_controller" />
+	    args="$(arg controllers)" />
 
       <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
 	
