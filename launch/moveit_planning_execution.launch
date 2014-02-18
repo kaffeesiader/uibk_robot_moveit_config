@@ -14,7 +14,7 @@
   <arg     if="$(arg simulation)" name="ns" value="simulation" />
   
   <group ns="$(arg ns)">
-  
+      
       # Initialize the planning_context and upload robot description first!
       <include file="$(find uibk_robot_moveit_config)/launch/planning_context.launch">
 	  <arg name="load_robot_description" value="true"/>
@@ -41,8 +41,6 @@
 	    type="spawner"
 	    output="screen"
 	    args="$(arg controllers)" />
-
-      <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
 	
       <include file="$(find uibk_robot_moveit_config)/launch/move_group.launch">
 	<arg name="publish_monitored_planning_scene" value="true" />
