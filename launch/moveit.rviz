@@ -3,10 +3,7 @@ Panels:
     Help Height: 84
     Name: Displays
     Property Tree Widget:
-      Expanded:
-        - /MotionPlanning1
-        - /MotionPlanning1/Planning Request1
-        - /MotionPlanning1/Planned Path1
+      Expanded: ~
       Splitter Ratio: 0.74256
     Tree Height: 312
   - Class: rviz/Help
@@ -100,66 +97,7 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          left_sdh_connector_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_finger_11_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_finger_12_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_finger_13_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_finger_21_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_finger_22_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_finger_23_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_grasp_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          left_sdh_palm_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_thumb_1_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_thumb_2_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_thumb_3_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_tip_link:
+          left_eef:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -307,7 +245,7 @@ Visualization Manager:
         Show Robot Visual: true
         Show Trail: false
         State Display Time: 0.05 s
-        Trajectory Topic: /real/move_group/display_planned_path
+        Trajectory Topic: /move_group/display_planned_path
       Planning Metrics:
         Payload: 1
         Show Joint Torques: false
@@ -322,12 +260,12 @@ Visualization Manager:
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
         Planning Group: right_arm
-        Query Goal State: false
+        Query Goal State: true
         Query Start State: false
         Show Workspace: false
         Start State Alpha: 1
         Start State Color: 0; 255; 0
-      Planning Scene Topic: /real/move_group/monitored_planning_scene
+      Planning Scene Topic: /move_group/monitored_planning_scene
       Robot Description: robot_description
       Scene Geometry:
         Scene Alpha: 1
@@ -392,66 +330,7 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          left_sdh_connector_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_finger_11_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_finger_12_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_finger_13_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_finger_21_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_finger_22_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_finger_23_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_grasp_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          left_sdh_palm_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_thumb_1_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_thumb_2_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_thumb_3_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          left_sdh_tip_link:
+          left_eef:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -614,15 +493,15 @@ Visualization Manager:
       Class: rviz/XYOrbit
       Distance: 2.55462
       Focal Point:
-        X: 0.401104
-        Y: 0.207817
+        X: 0.849187
+        Y: 0.23404
         Z: 1.90567e-06
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: -0.145204
+      Pitch: 0.114796
       Target Frame: world_link
       Value: XYOrbit (rviz)
-      Yaw: 6.08682
+      Yaw: 5.95182
     Saved: ~
 Window Geometry:
   Displays:

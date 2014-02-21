@@ -26,19 +26,6 @@ controller_list:
       - left_arm_5_joint
       - left_arm_6_joint
  
-  - name: left_sdh
-    action_ns: follow_joint_trajectory
-    type: FollowJointTrajectory
-    default: true
-    joints:
-      - left_sdh_knuckle_joint 
-      - left_sdh_finger_12_joint
-      - left_sdh_finger_13_joint
-      - left_sdh_finger_22_joint
-      - left_sdh_finger_23_joint
-      - left_sdh_thumb_2_joint
-      - left_sdh_thumb_3_joint
-      
   - name: right_sdh
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
