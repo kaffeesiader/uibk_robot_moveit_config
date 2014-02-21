@@ -15,16 +15,19 @@
 *.py
 *.pyc
 
-*/build
-*/devel
-*/install
-*/lib
-*/bin
-*/*_gen
+build
+devel
+install
+lib
+bin
+*_gen
 
-*/.project
-*/.cproject
-*/.pydevproject
-*/.settings
-*/_*
-*/default_warehouse_mongo_db
+# eclipse
+.project
+.cproject
+.pydevproject
+.settings
+_*
+
+# ros-warehouse db
+default_warehouse_mongo_db
