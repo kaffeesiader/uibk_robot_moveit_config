@@ -50,6 +50,19 @@
       <include file="$(find uibk_robot_moveit_config)/launch/moveit_rviz.launch">
 	<arg name="config" value="true"/>
       </include>
+      
+      <node name="plan_execution_node"
+	    pkg="uibk_moveit_adapter"
+	    type="plan_execution_node"
+	    output="screen">
+	    
+	<param name="planning_group_name" value="right_arm"/>
+	<param name="planner_id" value="RTTstarkConfigDefault"/>
+	<param name="num_planning_attempts" value="3"/>
+	<param name="max_planning_time" value="10"/>
+	
+      </node>
+      
   </group>
   
 </launch>
