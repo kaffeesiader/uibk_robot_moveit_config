@@ -57,7 +57,7 @@
 	    output="screen">
 	    
 	<param name="planning_group_name" value="right_arm"/>
-	<param name="planner_id" value="RTTstarkConfigDefault"/>
+	<param name="planner_id" value="BKPIECEkConfigDefault"/>
 	<param name="num_planning_attempts" value="3"/>
 	<param name="max_planning_time" value="10"/>
 	
