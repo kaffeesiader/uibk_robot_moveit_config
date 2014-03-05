@@ -3,7 +3,9 @@ Panels:
     Help Height: 84
     Name: Displays
     Property Tree Widget:
-      Expanded: ~
+      Expanded:
+        - /MotionPlanning1
+        - /MotionPlanning1/Scene Robot1
       Splitter Ratio: 0.74256
     Tree Height: 312
   - Class: rviz/Help
@@ -37,7 +39,7 @@ Visualization Manager:
     - Class: moveit_rviz_plugin/MotionPlanning
       Enabled: true
       MoveIt_Goal_Tolerance: 0
-      MoveIt_Planning_Time: 5
+      MoveIt_Planning_Time: 10
       MoveIt_Use_Constraint_Aware_IK: true
       MoveIt_Warehouse_Host: 127.0.0.1
       MoveIt_Warehouse_Port: 33829
@@ -229,6 +231,11 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          table_surface_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           torso_link:
             Alpha: 1
             Show Axes: false
@@ -239,13 +246,13 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-        Loop Animation: true
+        Loop Animation: false
         Robot Alpha: 0.5
         Show Robot Collision: false
         Show Robot Visual: true
         Show Trail: false
         State Display Time: 0.05 s
-        Trajectory Topic: /move_group/display_planned_path
+        Trajectory Topic: /real/move_group/display_planned_path
       Planning Metrics:
         Payload: 1
         Show Joint Torques: false
@@ -265,7 +272,7 @@ Visualization Manager:
         Show Workspace: false
         Start State Alpha: 1
         Start State Color: 0; 255; 0
-      Planning Scene Topic: /move_group/monitored_planning_scene
+      Planning Scene Topic: /real/move_group/monitored_planning_scene
       Robot Description: robot_description
       Scene Geometry:
         Scene Alpha: 1
@@ -462,6 +469,11 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          table_surface_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           torso_link:
             Alpha: 1
             Show Axes: false
@@ -498,10 +510,10 @@ Visualization Manager:
         Z: 1.90567e-06
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.114796
+      Pitch: -0.020204
       Target Frame: world_link
       Value: XYOrbit (rviz)
-      Yaw: 5.95182
+      Yaw: 5.73182
     Saved: ~
 Window Geometry:
   Displays:
