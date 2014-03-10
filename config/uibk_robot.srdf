@@ -34,8 +34,8 @@
         <link name="camera_link" />
         <link name="camera_rgb_optical_frame" />
     </group>
-    <group name="left_dummy_eef">
-        <link name="dummy_end_effector" />
+    <group name="left_plate">
+        <link name="disc_left" />
     </group>
     <group name="both_arms">
         <group name="right_arm" />
@@ -43,14 +43,16 @@
     </group>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="right_eef" parent_link="right_arm_7_link" group="right_kinect" parent_group="right_arm" />
-    <end_effector name="left_eef" parent_link="left_arm_7_link" group="left_dummy_eef" parent_group="left_arm" />
+    <end_effector name="left_eef" parent_link="left_arm_7_link" group="left_plate" parent_group="left_arm" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
-    <disable_collisions link1="camera_link" link2="right_arm_1_link" reason="Never" />
     <disable_collisions link1="camera_link" link2="right_arm_2_link" reason="Never" />
     <disable_collisions link1="camera_link" link2="right_arm_3_link" reason="Never" />
     <disable_collisions link1="camera_link" link2="right_arm_5_link" reason="Default" />
     <disable_collisions link1="camera_link" link2="right_arm_6_link" reason="Default" />
     <disable_collisions link1="camera_link" link2="right_arm_7_link" reason="Adjacent" />
+    <disable_collisions link1="disc_left" link2="left_arm_6_link" reason="Never" />
+    <disable_collisions link1="disc_left" link2="left_arm_7_link" reason="Adjacent" />
+    <disable_collisions link1="disc_left" link2="world_link" reason="Never" />
     <disable_collisions link1="kit_head_link" link2="left_arm_1_link" reason="Never" />
     <disable_collisions link1="kit_head_link" link2="left_arm_2_link" reason="Never" />
     <disable_collisions link1="kit_head_link" link2="left_arm_base_link" reason="Default" />
@@ -105,7 +107,6 @@
     <disable_collisions link1="left_arm_6_link" link2="left_arm_7_link" reason="Adjacent" />
     <disable_collisions link1="left_arm_6_link" link2="left_arm_base_link" reason="Never" />
     <disable_collisions link1="left_arm_6_link" link2="world_link" reason="Never" />
-    <disable_collisions link1="left_arm_7_link" link2="left_arm_base_link" reason="Never" />
     <disable_collisions link1="left_arm_7_link" link2="world_link" reason="Never" />
     <disable_collisions link1="left_arm_base_link" link2="right_arm_1_link" reason="Never" />
     <disable_collisions link1="left_arm_base_link" link2="right_arm_2_link" reason="Never" />
@@ -144,7 +145,6 @@
     <disable_collisions link1="right_arm_5_link" link2="right_arm_7_link" reason="Default" />
     <disable_collisions link1="right_arm_6_link" link2="right_arm_7_link" reason="Adjacent" />
     <disable_collisions link1="right_arm_6_link" link2="right_arm_base_link" reason="Never" />
-    <disable_collisions link1="right_arm_7_link" link2="right_arm_base_link" reason="Never" />
     <disable_collisions link1="right_arm_base_link" link2="torso_link" reason="Default" />
     <disable_collisions link1="right_arm_base_link" link2="world_link" reason="Adjacent" />
     <disable_collisions link1="torso_link" link2="world_link" reason="Adjacent" />
