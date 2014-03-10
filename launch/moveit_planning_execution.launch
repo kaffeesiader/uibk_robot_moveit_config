@@ -19,6 +19,8 @@
       <include file="$(find uibk_robot_moveit_config)/launch/planning_context.launch">
 	  <arg name="load_robot_description" value="true"/>
       </include>
+      
+      <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen"/>
   
       # start an instance of our hardware_adapter
       <node name="hardware_adapter" 

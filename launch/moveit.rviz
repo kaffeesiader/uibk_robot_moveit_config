@@ -5,7 +5,6 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /MotionPlanning1
-        - /MotionPlanning1/Scene Robot1
       Splitter Ratio: 0.74256
     Tree Height: 312
   - Class: rviz/Help
@@ -252,7 +251,7 @@ Visualization Manager:
         Show Robot Visual: true
         Show Trail: false
         State Display Time: 0.05 s
-        Trajectory Topic: /real/move_group/display_planned_path
+        Trajectory Topic: /simulation/move_group/display_planned_path
       Planning Metrics:
         Payload: 1
         Show Joint Torques: false
@@ -272,7 +271,7 @@ Visualization Manager:
         Show Workspace: false
         Start State Alpha: 1
         Start State Color: 0; 255; 0
-      Planning Scene Topic: /real/move_group/monitored_planning_scene
+      Planning Scene Topic: /simulation/move_group/monitored_planning_scene
       Robot Description: robot_description
       Scene Geometry:
         Scene Alpha: 1
@@ -510,10 +509,10 @@ Visualization Manager:
         Z: 1.90567e-06
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: -0.020204
+      Pitch: 0.174796
       Target Frame: world_link
       Value: XYOrbit (rviz)
-      Yaw: 5.73182
+      Yaw: 5.94682
     Saved: ~
 Window Geometry:
   Displays:

@@ -1,3 +1,13 @@
 <launch>
+  
+  <!-- broadcast the transform of the vision sensor -->
+  <node pkg="tf" type="static_transform_publisher" name="kinect_broadcaster"
+	args="-0.4568 0.6891 0.7516 1.5708 0.0 2.2689 world_link kinect_visionSensor 100" />
+	  
+  <rosparam command="load" file="$(find uibk_robot_moveit_config)/config/sensors_kinect.yaml" />
+  
+  <param name="octomap_frame" type="string" value="world_link" />
+  <param name="octomap_resolution" type="double" value="0.02" />
+  <param name="max_range" type="double" value="2.0" />
 
 </launch>
