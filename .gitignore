@@ -22,9 +22,18 @@ lib
 bin
 *_gen
 
+<<<<<<< HEAD
+=======
+# eclipse
+>>>>>>> 971abd01396122902e6a6baaacaaf2454ef9545f
 .project
 .cproject
 .pydevproject
 .settings
 _*
+<<<<<<< HEAD
+=======
+
+# ros-warehouse db
+>>>>>>> 971abd01396122902e6a6baaacaaf2454ef9545f
 default_warehouse_mongo_db

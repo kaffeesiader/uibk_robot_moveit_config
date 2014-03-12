@@ -50,7 +50,10 @@
       <include file="$(find uibk_robot_moveit_config)/launch/moveit_rviz.launch">
 	<arg name="config" value="true"/>
       </include>
+      
   </group>
+  
+  <include file="$(find uibk_robot_moveit_config)/launch/default_warehouse_db.launch" />
   
 </launch>
 
