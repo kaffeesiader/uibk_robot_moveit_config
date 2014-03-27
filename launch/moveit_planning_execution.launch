@@ -5,7 +5,7 @@
   
   # this argument controls wheather to choose configuration for simulated or real robot
   # default value is 'simulation'
-  <arg name="simulation" default="true"/>
+  <arg name="simulation" default="false"/>
    
   <arg unless="$(arg simulation)" name="controllers" value="right_arm left_arm joint_state_controller" />
   <arg     if="$(arg simulation)" name="controllers" value="right_arm left_arm left_sdh joint_state_controller" />
@@ -56,7 +56,8 @@
 	    type="plan_execution_node"
 	    output="screen">
 	    
-	<param name="planning_group_name" value="right_arm"/>
+	<!-- <param name="planning_group_name" value="right_arm"/> -->
+	<param name="planning_group_name" value="left_arm"/>
 	<param name="planner_id" value="BKPIECEkConfigDefault"/>
 	<param name="num_planning_attempts" value="3"/>
 	<param name="max_planning_time" value="10"/>

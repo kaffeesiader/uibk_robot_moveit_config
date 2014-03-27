@@ -253,7 +253,7 @@ Visualization Manager:
         Show Robot Visual: true
         Show Trail: false
         State Display Time: 0.05 s
-        Trajectory Topic: /move_group/display_planned_path
+        Trajectory Topic: /real/move_group/display_planned_path
       Planning Metrics:
         Payload: 1
         Show Joint Torques: false
@@ -267,13 +267,13 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
-        Planning Group: right_arm
+        Planning Group: left_arm
         Query Goal State: true
         Query Start State: false
         Show Workspace: false
         Start State Alpha: 1
         Start State Color: 0; 255; 0
-      Planning Scene Topic: /move_group/monitored_planning_scene
+      Planning Scene Topic: /real/move_group/monitored_planning_scene
       Robot Description: robot_description
       Scene Geometry:
         Scene Alpha: 1
@@ -511,10 +511,10 @@ Visualization Manager:
         Z: 1.90567e-06
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.079796
+      Pitch: 0.089796
       Target Frame: world_link
       Value: XYOrbit (rviz)
-      Yaw: 5.54182
+      Yaw: 5.80682
     Saved: ~
 Window Geometry:
   Displays:
@@ -530,5 +530,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1855
-  X: 56
+  X: 42
   Y: 24
