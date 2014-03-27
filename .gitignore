@@ -27,4 +27,5 @@ bin
 .pydevproject
 .settings
 _*
+*~
 default_warehouse_mongo_db

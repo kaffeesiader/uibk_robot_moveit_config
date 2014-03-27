@@ -26,15 +26,6 @@ controller_list:
       - left_sdh_finger_13_joint
       - left_sdh_thumb_2_joint
       - left_sdh_thumb_3_joint
-  - name: fake_right_sdh_controller
-    joints:
-      - right_sdh_finger_22_joint
-      - right_sdh_finger_23_joint
-      - right_sdh_knuckle_joint
-      - right_sdh_finger_12_joint
-      - right_sdh_finger_13_joint
-      - right_sdh_thumb_2_joint
-      - right_sdh_thumb_3_joint
   - name: fake_both_arms_controller
     joints:
       - left_arm_0_joint
@@ -51,3 +42,6 @@ controller_list:
       - right_arm_4_joint
       - right_arm_5_joint
       - right_arm_6_joint
+  - name: fake_right_dummy_controller
+    joints:
+      []

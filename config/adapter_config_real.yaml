@@ -2,7 +2,6 @@ adapter_list:
   - left_arm
   - right_arm
   - left_sdh
-  - right_sdh
   
 left_arm:
     joint_state_topic: "left_arm/joint_control/get_state"
