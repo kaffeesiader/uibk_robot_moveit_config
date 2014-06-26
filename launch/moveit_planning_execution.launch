@@ -23,11 +23,11 @@
       # start an instance of our hardware_adapter
       <node name="hardware_adapter" 
 	    pkg="uibk_moveit_adapter" 
-	    type="HardwareAdapter" 
+	    type="hardware_adapter" 
 	    output="screen">
 
 	  <!-- upload the adapter configuration to the parameter server -->
-	  <rosparam command="load" file="$(find uibk_robot_moveit_config)/config/adapter_config_$(arg ns).yaml" />
+	  <rosparam command="load" file="$(find uibk_robot_moveit_config)/config/adapter_config.yaml" />
       </node>
       
       # Load controller configurations to the parameter server
@@ -50,18 +50,6 @@
       <include file="$(find uibk_robot_moveit_config)/launch/moveit_rviz.launch">
 	<arg name="config" value="true"/>
       </include>
-      
-      <node name="plan_execution_node"
-	    pkg="uibk_moveit_adapter"
-	    type="plan_execution_node"
-	    output="screen">
-	    
-	<param name="planning_group_name" value="right_arm"/>
-	<param name="planner_id" value="BKPIECEkConfigDefault"/>
-	<param name="num_planning_attempts" value="3"/>
-	<param name="max_planning_time" value="10"/>
-	
-      </node>
       
   </group>
   
